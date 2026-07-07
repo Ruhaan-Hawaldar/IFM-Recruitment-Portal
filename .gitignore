@@ -1,7 +1,25 @@
+# Virtual Environment
 venv/
+
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+
+# Database
 db.sqlite3
+
+# Environment Variables
 .env
+
+# Media Uploads
 media/
+
+# Static files generated during deployment
 staticfiles/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
