@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="row justify-content-center">
+
+    <div class="col-lg-8">
+
+        <div class="card shadow">
+
+            <div class="card-header bg-primary text-white text-center">
+                <h3>Job Application Form</h3>
+                <p class="mb-0">Diploma & ITI Candidates</p>
+            </div>
+
+            <div class="card-body">
+
+                <form method="POST">
+
+                    {% csrf_token %}
+
+                    <div class="row">
+
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Full Name</label>
+                            {{ form.name }}
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Mobile Number</label>
+                            {{ form.mobile }}
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Email</label>
+                            {{ form.email }}
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Education</label>
+                            {{ form.education }}
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Branch</label>
+                            {{ form.branch }}
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">College</label>
+                            {{ form.college }}
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Passing Year</label>
+                            {{ form.passing_year }}
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Percentage</label>
+                            {{ form.percentage }}
+                        </div>
+
+                        <div class="col-md-12 mb-3">
+                            <label class="form-label">Experience</label>
+                            {{ form.experience }}
+                        </div>
+
+                    </div>
+
+                    <div class="text-center">
+
+                        <button class="btn btn-success btn-lg px-5">
+                            Submit Application
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

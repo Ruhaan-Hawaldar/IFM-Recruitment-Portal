@@ -1,0 +1,293 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<section class="hero-banner">
+    <img src="{% static 'images/factory.png' %}" class="img-fluid w-100">
+</section>
+
+<!-- About Company -->
+<section class="py-5">
+
+    <div class="row align-items-center">
+
+        <div class="col-lg-6">
+
+            <h2 class="fw-bold mb-4">
+                About Impulse Facility Management
+            </h2>
+
+            <p class="lead">
+
+                Impulse Facility Management Pvt Ltd is a trusted manpower
+                recruitment company based in Pune, Maharashtra.
+
+            </p>
+
+            <p>
+
+                We specialize in providing Diploma and ITI candidates to
+                leading manufacturing companies through direct interviews,
+                transparent recruitment, and complete HR support.
+
+            </p>
+
+            <a href="{% url 'register' %}" class="btn btn-primary btn-lg">
+
+                Apply Now →
+
+            </a>
+
+        </div>
+
+        <div class="col-lg-6 text-center">
+
+            <img src="{% static 'images/logo.png' %}" class="img-fluid" width="280">
+
+        </div>
+
+    </div>
+
+</section>
+
+<hr class="my-5">
+
+<!-- Statistics -->
+
+<section class="mb-5">
+
+    <div class="row text-center">
+
+        <div class="col-md-4">
+
+            <div class="card shadow p-4">
+
+                <h1 class="text-primary fw-bold">
+
+                    500+
+
+                </h1>
+
+                <p>Candidates Placed</p>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="card shadow p-4">
+
+                <h1 class="text-success fw-bold">
+
+                    20+
+
+                </h1>
+
+                <p>Manufacturing Companies</p>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="card shadow p-4">
+
+                <h1 class="text-warning fw-bold">
+
+                    100%
+
+                </h1>
+
+                <p>HR Support</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<hr class="my-5">
+
+<!-- Why Choose Us -->
+
+<section class="py-4">
+
+    <h2 class="text-center fw-bold mb-5">
+
+        Why Choose Us?
+
+    </h2>
+
+    <div class="row g-4">
+
+        <div class="col-md-3">
+
+            <div class="card shadow text-center p-4 h-100">
+
+                <h1>🏭</h1>
+
+                <h5>Direct Interviews</h5>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="card shadow text-center p-4 h-100">
+
+                <h1>📝</h1>
+
+                <h5>Free Registration</h5>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="card shadow text-center p-4 h-100">
+
+                <h1>🎓</h1>
+
+                <h5>Freshers Welcome</h5>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="card shadow text-center p-4 h-100">
+
+                <h1>🏢</h1>
+
+                <h5>Multiple Companies</h5>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<hr class="my-5">
+
+<!-- Hiring Process -->
+
+<section class="py-5">
+
+    <h2 class="text-center fw-bold mb-5">
+
+        Hiring Process
+
+    </h2>
+
+    <div class="row text-center g-4">
+
+        <div class="col-md-3">
+
+            <div class="card shadow p-4">
+
+                <h1 class="text-primary">
+
+                    1
+
+                </h1>
+
+                <h5>Apply Online</h5>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="card shadow p-4">
+
+                <h1 class="text-success">
+
+                    2
+
+                </h1>
+
+                <h5>HR Screening</h5>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="card shadow p-4">
+
+                <h1 class="text-warning">
+
+                    3
+
+                </h1>
+
+                <h5>Interview</h5>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="card shadow p-4">
+
+                <h1 class="text-danger">
+
+                    4
+
+                </h1>
+
+                <h5>Join Company</h5>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<hr class="my-5">
+
+<!-- CTA -->
+
+<section class="mb-5">
+
+    <div class="card bg-primary text-white text-center p-5 shadow">
+
+        <h2 class="fw-bold">
+
+            Start Your Career Today
+
+        </h2>
+
+        <p class="lead">
+
+            Register now and get connected with leading manufacturing companies in Pune.
+
+        </p>
+
+        <a href="{% url 'register' %}" class="btn btn-warning btn-lg mt-3">
+
+            Apply Now →
+
+        </a>
+
+    </div>
+
+</section>
+
+{% endblock %}
