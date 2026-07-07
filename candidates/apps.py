@@ -2,4 +2,17 @@ from django.apps import AppConfig
 
 
 class CandidatesConfig(AppConfig):
-    name = 'candidates'
+    default_auto_field = "django.db.models.BigAutoField"
+    name = "candidates"
+
+    def ready(self):
+        from django.contrib.auth.models import User
+
+        username = "admin"
+
+        if not User.objects.filter(username=username).exists():
+            User.objects.create_superuser(
+                username=username,
+                email="admin@gmail.com",
+                password="Admin@123"
+            )
